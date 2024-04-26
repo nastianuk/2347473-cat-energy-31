@@ -6,7 +6,12 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="scripts/index.js" defer>
+  </script>
 </head>
 
 <body class="page__body">
@@ -26,10 +31,10 @@
             <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="index.html">Каталог продукции</a>
+            <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="index.html">Подбор программы</a>
+            <a href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -39,8 +44,13 @@
   <main class="main-container">
     <section class="hero-block">
       <div class="hero-block__wrapper">
-        <h1 class="hero-block__h1">Функциональное питание для котов</h1>
+        <h1 class="hero-block__title">Функциональное питание для котов</h1>
         <p class="hero-block__description">Занялся собой? Займись котом!</p>
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-jar-desktop@2x.png 1x, images/hero-jar-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-jar-tablet@1x.png 1x, images/hero-jar-tablet@2x.png 2x">
+          <img class="hero-block__jar-img" src="images/hero-jar-mobile@1x.png" srcset="images/hero-jar-mobile@2x.png 2x" width="280" height="270" alt="Банка с кормом Кэт Энерджи">
+        </picture>
         <a class="hero-block__button" href="#">Подобрать программу</a>
       </div>
     </section>
@@ -113,6 +123,14 @@
         <div class="example__number-money">
           <p class="example__number-title">Затраты на питание:<span class="example__number-description">15 000 руб.</span></p>
         </div>
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/fat-cat-desktop@1x.png 1x, images/fat-cat-desktop@2x.png 2x">
+          <img class="example__img-slider" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстенький котик">
+        </picture>
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/thin-cat-desktop@1x.png 1x, images/thin-cat-desktop@2x.png 2x">
+          <img class="example__img-slider" src="images/thin-cat-mobile@1x.png" srcset="images/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Худенький котик">
+        </picture>
       </div>
     </section>
 
@@ -121,6 +139,11 @@
         <h2 class="visually-hidden">Адрес</h2>
         <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
         <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="address__img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
       </div>
     </section>
 
