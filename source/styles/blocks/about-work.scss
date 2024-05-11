@@ -1,0 +1,15 @@
+
+.about-work {
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__description {
+    font-family: $font-family-lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $basic-dark-gray;
+  }
+}

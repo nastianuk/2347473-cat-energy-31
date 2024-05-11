@@ -1,7 +1,22 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/hero-block.scss";
+@import "./blocks/recommendation-catalog.scss";
+@import "./blocks/about-work.scss";
+@import "./blocks/example.scss";
+@import "./blocks/address.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/catalog-container.scss";
+@import "./blocks/catalog-cards.scss";
+@import "./blocks/card.scss";
+@import "./blocks/additionally.scss";
+@import "./blocks/subscrube.scss";
