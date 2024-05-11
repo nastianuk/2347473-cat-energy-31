@@ -26,14 +26,14 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <button class="main-nav__closing" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a href="index.html">Главная</a>
-          </li>
           <li class="main-nav__list-item main-nav__list-item--active">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__list-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="#">Подбор программы</a>
+            <a class="main-nav__list-link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -43,7 +43,7 @@
   <main class="catalog-container">
     <section class="catalog-cards">
       <div class="catalog-cards__wrapper">
-        <h1 class="catalog-cards__title">Каталог продукции</h1>
+        <h1 class="catalog-cards__title title">Каталог продукции</h1>
         <ul class="catalog-cards__list">
 
           <li class="catalog-cards__item card">
@@ -213,7 +213,7 @@
           <li class="catalog-cards__item card">
             <h3 class="card__title">Показать еще 100500 товаров</h3>
             <p class="card__text">На самом деле вкусов гораздо больше!</p>
-            <button class="card__button-more" type="button">показать все</button>
+            <button class="card__button--more" type="button">показать все</button>
           </li>
 
         </ul>

@@ -1,0 +1,29 @@
+.subscrube {
+  &__title {
+    font-family: $font-family-oswald;
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 40px;
+    color: $black;
+  }
+
+  &__description {
+    font-family: $font-family-oswald;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $black;
+  }
+
+  &__button {
+    background-color: $basic-green;
+    font-family: $font-family-oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    border: none;
+  }
+}

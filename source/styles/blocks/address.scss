@@ -1,0 +1,19 @@
+.address {
+  &__title {
+    font-family: $font-family-oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: $font-family-lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $basic-dark-gray;
+    font-style: normal;
+  }
+}
