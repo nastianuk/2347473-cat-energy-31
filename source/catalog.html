@@ -17,14 +17,16 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип изображение кота">
-      </a>
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="#" width="101" height="18" alt="Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип изображение кота">
+        </picture>
+        <img class="main-header__logo-image" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="main-nav__closing" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__list-item main-nav__list-item--active">
             <a class="main-nav__list-link" href="index.html">Главная</a>
@@ -213,7 +215,7 @@
           <li class="catalog-cards__item card">
             <h3 class="card__title">Показать еще 100500 товаров</h3>
             <p class="card__text">На самом деле вкусов гораздо больше!</p>
-            <button class="card__button--more" type="button">показать все</button>
+            <button class="card__button card__button--more" type="button">показать все</button>
           </li>
 
         </ul>

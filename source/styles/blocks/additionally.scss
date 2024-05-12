@@ -5,34 +5,34 @@
 
   &__title {
     font-family: $font-family-oswald;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 24px;
     color: $black;
   }
 
   &__item-title {
     font-family: $font-family-oswald;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 16px;
     text-transform: uppercase;
     color: $basic-dark-gray-2;
   }
 
   &__item-mass {
     font-family: $font-family-lato;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 14px;
     color: $basic-dark-gray;
   }
 
   &__item-price {
     font-family: $font-family-lato;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 14px;
     color: $basic-dark-gray;
   }
 
@@ -52,5 +52,16 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+  }
+
+  &__card-text::before {
+    content: "";
+    background-image: url("../../icons/gift.svg");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-color: $basic-green;
+    width: 80px;
+    height: 80px;
+    display: block;
   }
 }
