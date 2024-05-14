@@ -17,14 +17,16 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип изображение кота">
-      </a>
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="#" width="101" height="18" alt="Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип изображение кота">
+        </picture>
+        <img class="main-header__logo-image" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="main-nav__closing" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__list-item main-nav__list-item--active">
             <a class="main-nav__list-link" href="index.html">Главная</a>
@@ -211,9 +213,9 @@
           </li>
 
           <li class="catalog-cards__item card">
-            <h3 class="card__title">Показать еще 100500 товаров</h3>
+            <h3 class="card__title card__title--more">Показать еще 100500 товаров</h3>
             <p class="card__text">На самом деле вкусов гораздо больше!</p>
-            <button class="card__button--more" type="button">показать все</button>
+            <button class="card__button card__button--more" type="button">показать все</button>
           </li>
 
         </ul>
@@ -291,29 +293,30 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo" href="#">
-        <img class="main-footer__logo-img" src="images/footer-logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
+        <img class="main-footer__logo-img" src="images/logo-text.svg" width="128" height="24" alt="Логотип Cat Energy">
       </a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link" href="#">
+          <a class="main-footer__social-link main-footer__social-link--vkontakte" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link" href="#">
+          <a class="main-footer__social-link main-footer__social-link--youtube" href="#">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link" href="#">
+          <a class="main-footer__social-link main-footer__social-link--telegram" href="#">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
       </ul>
-
       <a class="main-footer__html-logo" href="#">
         <p class="main-footer__html-text">HTML Academy</p>
-        <img class="main-footer__html-img" src="#" width="27" height="34" alt="Логотип HTML Academy">
+        <a class="main-footer__html-img" href="#">
+          <p class="visually-hidden">Логотип HTML Academy</p>
+        </a>
       </a>
     </div>
   </footer>

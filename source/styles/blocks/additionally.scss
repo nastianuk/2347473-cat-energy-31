@@ -1,56 +1,67 @@
 .additionally {
-  &__list {
-    list-style: none;
-  }
-
-  &__title {
-    font-family: $font-family-oswald;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 40px;
-    color: $black;
-  }
-
-  &__item-title {
-    font-family: $font-family-oswald;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $basic-dark-gray-2;
-  }
-
-  &__item-mass {
-    font-family: $font-family-lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color: $basic-dark-gray;
-  }
-
-  &__item-price {
-    font-family: $font-family-lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color: $basic-dark-gray;
-  }
-
-  &__button {
+  &__card-text::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#gift");
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
     background-color: $basic-green;
-    font-family: $font-family-oswald;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $white;
+    width: 80px;
+    height: 80px;
+    display: block;
   }
+}
 
-  &__card-text {
-    font-family: $font-family-lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-  }
+.additionally__list {
+  list-style: none;
+}
+
+.additionally__title {
+  font-family: $font-family-oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $black;
+}
+
+.additionally__item-title {
+  font-family: $font-family-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic-dark-gray-2;
+}
+
+.additionally__item-mass {
+  font-family: $font-family-lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: $basic-dark-gray;
+}
+
+.additionally__item-price {
+  font-family: $font-family-lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: $basic-dark-gray;
+}
+
+.additionally__button {
+  background-color: $basic-green;
+  font-family: $font-family-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+}
+
+.additionally__card-text {
+  font-family: $font-family-lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
