@@ -1,62 +1,62 @@
 .card {
-  &__list {
-    list-style: none;
-  }
-
-  &__title {
-    font-family: $font-family-oswald;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color: $basic-dark-gray-2;
-  }
-
-  &__definition {
-    font-family: $font-family-lato;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    color: $basic-dark-gray;
-  }
-
-  &__value {
-    font-family: $font-family-lato;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    color: $basic-dark-gray;
-  }
-
-  &__button {
-    background-color: $basic-green;
-    font-family: $font-family-oswald;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $white;
-  }
-
-  &__button--more {
-    background-color: $basic-gray;
-    font-family: $font-family-oswald;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $basic-dark-gray;
-    border: none;
-  }
-
-  &__title::before {
+  &__title--more::before {
     content: "";
-    background-image: url("../../icons/plus.svg");
+    background-image: url("../../icons/stack.svg#plus");
     background-repeat: no-repeat;
     background-size: 30px 30px;
     width: 30px;
     height: 30px;
     display: block;
   }
+}
+
+.card__list {
+  list-style: none;
+}
+
+.card__title {
+  font-family: $font-family-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $basic-dark-gray-2;
+}
+
+.card__definition {
+  font-family: $font-family-lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $basic-dark-gray;
+}
+
+.card__value {
+  font-family: $font-family-lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $basic-dark-gray;
+}
+
+.card__button {
+  background-color: $basic-green;
+  font-family: $font-family-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+}
+
+.card__button--more {
+  background-color: $basic-gray;
+  font-family: $font-family-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-dark-gray;
+  border: none;
 }

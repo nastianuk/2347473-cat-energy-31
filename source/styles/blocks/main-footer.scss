@@ -1,3 +1,56 @@
 .main-footer__social-list {
   list-style: none;
 }
+
+.main-footer__social-link {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-width: 28px;
+  min-height: 22px;
+  display: block;
+}
+
+.main-footer__social-link--vkontakte {
+  background-color: $basic-light-gray-2;
+  mask-image: url("../../icons/stack.svg#vkontakte");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+}
+
+.main-footer__social-link--youtube {
+  background-color: $basic-light-gray-2;
+  mask-image: url("../../icons/stack.svg#youtube");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+}
+
+.main-footer__social-link--telegram {
+  background-color: $basic-light-gray-2;
+  mask-image: url("../../icons/stack.svg#telegram");
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
+}
+
+.main-footer__html-img {
+  background-color: $basic-light-gray-2;
+  mask-image: url("../../icons/stack.svg#logo-html");
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-width: 27px;
+  min-height: 34px;
+  display: block;
+}
+
+.main-footer__html-text {
+  font-family: $font-family-lato;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $basic-dark-gray;
+}
+
+.main-footer__html-logo {
+  text-decoration: none;
+}

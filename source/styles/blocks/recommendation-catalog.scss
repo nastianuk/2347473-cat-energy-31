@@ -1,41 +1,7 @@
 .recommendation-catalog {
-  &__list {
-    list-style: none;
-    padding: 0;
-  }
-
-  &__title {
-    font-family: $font-family-oswald;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 37px;
-    text-transform: uppercase;
-    color: $black;
-  }
-
-  &__description {
-    font-family: $font-family-lato;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $black;
-  }
-
-  &__link {
-    font-family: $font-family-oswald;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $white;
-    text-align: center;
-    background-color: $basic-green;
-  }
-
   &__list-wrapper::before {
     content: "";
-    background-image: url("../../icons/cat-slim.svg");
+    background-image: url("../../icons/stack.svg#cat-slim");
     background-repeat: no-repeat;
     background-size: 36px 50px;
     width: 36px;
@@ -44,7 +10,7 @@
   }
 
   &__list-wrapper--pro::before {
-    background-image: url("../../icons/cat-pro.svg");
+    background-image: url("../../icons/stack.svg#cat-pro");
   }
 
   &__link::after {
@@ -52,10 +18,44 @@
     background-color: #000000;
     width: 24px;
     height: 12px;
-    mask-image: url("../../icons/arrow.svg");
+    mask-image: url("../../icons/stack.svg#arrow");
     mask-position: 100%;
     mask-size: 24px 12px;
     mask-repeat: no-repeat;
     display: block;
   }
+}
+
+.recommendation-catalog__list {
+  list-style: none;
+  padding: 0;
+}
+
+.recommendation-catalog__title {
+  font-family: $font-family-oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.recommendation-catalog__description {
+  font-family: $font-family-lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $black;
+}
+
+.recommendation-catalog__link {
+  font-family: $font-family-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  background-color: $basic-green;
 }
