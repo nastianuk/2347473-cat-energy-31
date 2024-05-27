@@ -17,18 +17,23 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-          <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип изображение кота">
-        </picture>
-        <img class="main-header__logo-image" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-        <ul class="main-nav__list">
+        <div class="main-nav__logo-wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+              <img class="main-nav__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип изображение кота">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text.svg">
+              <img class="main-nav__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle main-nav__toggle-close main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        </div>
+        <ul class="main-nav__list main-nav__list--hide">
           <li class="main-nav__list-item main-nav__list-item--active">
             <a class="main-nav__list-link" href="index.html">Главная</a>
           </li>
@@ -46,7 +51,7 @@
   <main class="main-container">
     <section class="hero-block">
       <div class="hero-block__wrapper">
-        <h1 class="hero-block__title">Функциональное питание для котов</h1>
+        <h1 class="hero-block__title">Функциональное<br> питание для котов</h1>
         <p class="hero-block__description">Занялся собой? Займись котом!</p>
         <picture>
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-jar-desktop@2x.png 1x, images/hero-jar-desktop@2x.png 2x">
@@ -138,7 +143,7 @@
           <img class="example__img-slider" src="images/thin-cat-mobile@1x.png" srcset="images/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Худенький котик">
         </picture>
         <button class="example__slider-button" type="button">
-          <p class="visually-hidden">Кнопка слайдера</p>
+          <span class="visually-hidden">Кнопка слайдера</span>
         </button>
       </div>
     </section>
@@ -182,12 +187,13 @@
       </ul>
       <a class="main-footer__html-logo" href="#">
         <p class="main-footer__html-text">HTML Academy</p>
-        <a class="main-footer__html-img" href="#">
-          <p class="visually-hidden">Логотип HTML Academy</p>
-        </a>
+      </a>
+      <a class="main-footer__html-img" href="#">
+        <p class="visually-hidden">Логотип HTML Academy</p>
       </a>
     </div>
   </footer>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>

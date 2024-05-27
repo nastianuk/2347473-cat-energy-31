@@ -1,10 +1,20 @@
 /* здесь используйте глобальные переменные */
+// fonts
 $font-family-oswald: "Oswald", sans-serif;
 $font-family-lato: "Lato", sans-serif;
+
+// color
 $black: #000000;
 $white: #ffffff;
 $basic-green: #68b738;
+$background-green: rgba(105, 183, 56, 0.85);
 $basic-dark-gray: #444444;
 $basic-dark-gray-2: #222222;
+$basic-light-gray: #e6e6e6;
 $basic-light-gray-2: #666666;
 $basic-gray: #f2f2f2;
+
+//screen resolution
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;

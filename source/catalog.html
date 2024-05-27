@@ -16,22 +16,27 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-          <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип изображение кота">
-        </picture>
-        <img class="main-header__logo-image" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--active">
+        <div class="main-nav__logo-wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+              <img class="main-nav__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип изображение кота">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text.svg">
+              <img class="main-nav__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle main-nav__toggle-close main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        </div>
+        <ul class="main-nav__list main-nav__list--hide">
+          <li class="main-nav__list-item">
             <a class="main-nav__list-link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__list-item">
+          <li class="main-nav__list-item main-nav__list-item--active">
             <a class="main-nav__list-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__list-item">
