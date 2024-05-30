@@ -2,6 +2,17 @@
   min-height: 39px;
   margin: 0 auto;
 
+  &--catalog {
+    @media (max-width: $mobile-width-only) {
+      border-bottom: 1px solid $line-gray;
+    }
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 100%;
     padding: 55px 110px 0;
@@ -32,9 +43,9 @@
       background-size: cover;
       z-index: -2;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/index-background-desktop@2x.jpg")
-    }
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/index-background-desktop@2x.jpg")
+       }
     }
   }
 }
