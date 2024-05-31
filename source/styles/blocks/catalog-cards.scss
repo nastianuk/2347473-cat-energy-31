@@ -1,11 +1,25 @@
 .catalog-cards__wrapper {
-  margin: 27px 20px 25px;
+  margin: 27px 0 25px;
 }
 
 .catalog-cards__title {
-  margin: 0 0 41px;
+  margin: 0 20px 41px;
 }
 
 .catalog-cards__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
 }
+
+.catalog-cards__item {
+  border-top: 1px solid $basic-gray;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 20px 25px;
+}
+
