@@ -23,9 +23,9 @@
       background-size: cover;
       z-index: -2;
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/index-background-mobile@2x.jpg")
-      }
+      // @media (min-resolution: 2dppx) {
+      //   background-image: url("../../images/index-background-mobile@2x.jpg")
+      // }
     }
   }
 }

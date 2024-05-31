@@ -1,20 +1,12 @@
+
 .additionally {
-
-
-  // &__card-text::before {
-  //   content: "";
-  //   background-image: url("../../icons/stack.svg#gift");
-  //   background-repeat: no-repeat;
-  //   background-size: 80px 80px;
-  //   background-color: $basic-green;
-  //   width: 80px;
-  //   height: 80px;
-  //   display: block;
-  // }
+  margin: 0 20px;
 }
 
 .additionally__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .additionally__title {
@@ -23,6 +15,19 @@
   font-weight: 400;
   line-height: 24px;
   color: $black;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 34px;
+    height: 2px;
+    background-color: $asic-green;
+    z-index: -1;
+  }
 }
 
 .additionally__item-title {
@@ -62,7 +67,7 @@
 }
 
 .additionally__card {
-  margin: 0 20px;
+  margin: 0 auto;
   background-color: $basic-green;
   background-image: url("../../images/cat-in-bag-mobile@1x.jpg");
   background-position: 50%;
@@ -70,8 +75,18 @@
   background-size: cover;
   width: 280px;
   height: 290px;
-  position: relative;
-  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+    background-image: url("../../images/cat-in-bag-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+    height: 289px;
+    background-image: url("../../images/cat-in-bag-desktop@1x.jpg");
+  }
 }
 
 .additionally__card-text {
@@ -80,18 +95,20 @@
   font-weight: 400;
   line-height: 20px;
   color: $white;
-  width: 161px;
-  margin: ;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  padding: 171px 61px 59px 58px;
 
-  &::after {
-    content: "";
-    z-index: -1;
-    background-color: $background-green;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 71px 124px 69px 423px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 43px 42px 41px;
+    text-align: center;
   }
 
   &::before {
@@ -102,7 +119,27 @@
     width: 80px;
     height: 80px;
     display: block;
-    top: 51px;
+    position: absolute;
+    top: 42px;
+    left: 35%;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+      left: 78px;
+      width: 80px;
+      height: 83px;
+      background-size: 80px 83px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 56px;
+      left: 84px;
+    }
   }
 }
 
+.additionally__card-background {
+  width: 100%;
+  height: 100%;
+  background-color: $background-green;
+}
