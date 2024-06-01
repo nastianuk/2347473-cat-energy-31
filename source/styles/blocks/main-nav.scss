@@ -24,7 +24,6 @@
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
-    // display: none;
     z-index: 2;
     background-color: $white;
     position: absolute;
@@ -172,7 +171,6 @@
 }
 
 .main-nav__logo {
-  // justify-content: space-between;
   align-items: center;
   display: flex;
 
