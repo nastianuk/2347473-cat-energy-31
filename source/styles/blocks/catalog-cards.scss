@@ -1,9 +1,17 @@
 .catalog-cards__wrapper {
   margin: 27px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 89px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 92px;
+  }
 }
 
 .catalog-cards__title {
-  margin: 0 20px 41px;
+  margin: 0 20px 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

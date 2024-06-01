@@ -1,17 +1,16 @@
 /* в этот файл добавляет скрипты*/
-// const navList = document.querySelector('.main-nav__list');
-// const navToggle = document.querySelector('.main-nav__toggle');
-// const clsToggle = document.querySelector('.main-nav__toggle-close');
+const brgBtn = document.querySelector ('.main-nav__toggle');
+const clsBtn = document.querySelector ('.main-nav__toggle-close');
+const navList = document.querySelector ('.main-nav__list');
 
-// navToggle.onclick = function() {
-//   navToggle.classList.add('.main-nav__toggle--hide');
-//   clsToggle.classList.remove('.main-nav__toggle--close');
-//   navList.classList.remove('.main-nav__list--hide');
-// };
+brgBtn.onclick = function () {
+  brgBtn.classList.add ('main-nav__toggle--opened');
+  clsBtn.classList.remove ('main-nav__toggle-close--closed');
+  navList.classList.remove ('main-nav__list--nojs');
+};
 
-// clsToggle.onclick = function() {
-//   navToggle.classList.remove('.main-nav__toggle--hide');
-//   clsToggle.classList.add('.main-nav__toggle--close');
-//   navList.classList.add('.main-nav__list--hide');
-// };
-
+clsBtn.onclick = function () {
+  clsBtn.classList.add ('main-nav__toggle-close--closed');
+  brgBtn.classList.remove ('main-nav__toggle--opened');
+  navList.classList.add ('main-nav__list--nojs');
+};

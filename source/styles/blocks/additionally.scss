@@ -1,12 +1,41 @@
 
 .additionally {
-  margin: 0 20px;
+  border-top: 2px solid $basic-green;
+  margin: 33px auto 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
+}
+
+.additionally__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 110px;
+  }
 }
 
 .additionally__list {
   list-style: none;
-  margin: 0;
+  margin: 33px 20px 35px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    margin: 80px 0 0;
+  }
 }
 
 .additionally__title {
@@ -15,18 +44,26 @@
   font-weight: 400;
   line-height: 24px;
   color: $black;
-  position: relative;
+  margin: -10px 0 0;
+  padding: 0 0 0 20px;
+  background-color: $white;
+  width: 283px;
+  z-index: -1;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 15px;
-    left: 0;
-    width: 34px;
-    height: 2px;
-    background-color: $asic-green;
-    z-index: -1;
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    width: 380px;
+    margin: -16px 0 80px 30px;
+    text-align: center;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 456px;
+    font-size: 40px;
+    line-height: 40px;
+    margin: -20px 0 0 73px;
   }
 }
 
@@ -37,6 +74,19 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-dark-gray-2;
+  margin: 0 0 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    width: 161px;
+    margin: 0 164px 0 0;
+  }
 }
 
 .additionally__item-mass {
@@ -45,6 +95,18 @@
   font-weight: 400;
   line-height: 14px;
   color: $basic-dark-gray;
+  margin: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
+    margin: 0;
+  }
 }
 
 .additionally__item-price {
@@ -53,6 +115,16 @@
   font-weight: 400;
   line-height: 14px;
   color: $basic-dark-gray;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 13px;
+  }
 }
 
 .additionally__button {
@@ -64,6 +136,15 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $white;
+  display: block;
+  padding: 10px 0 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
 
 .additionally__card {
@@ -83,7 +164,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 245px;
+    margin: 80px 0 0;
+    width: 245px;
     height: 289px;
     background-image: url("../../images/cat-in-bag-desktop@1x.jpg");
   }
@@ -98,7 +180,7 @@
   text-align: center;
   margin: 0;
   position: relative;
-  padding: 171px 61px 59px 58px;
+  padding: 187px 61px 59px 58px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -120,7 +202,7 @@
     height: 80px;
     display: block;
     position: absolute;
-    top: 42px;
+    top: 57px;
     left: 35%;
 
     @media (min-width: $tablet-width) {
@@ -142,4 +224,59 @@
   width: 100%;
   height: 100%;
   background-color: $background-green;
+}
+
+.additionally__price-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+
+    &--water {
+      width: 163px;
+    }
+
+    &--milk {
+      width: 141px;
+    }
+
+    &--vitamins {
+      width: 216px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    margin-right: 40px;
+  }
+}
+
+.additionally__item {
+  padding: 13px 0 19px;
+  border-top: 1px solid $border-gray;
+
+  &:last-of-type {
+    border-bottom: 1px solid $border-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0 17px;
+  }
+}
+
+.additionally__item-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

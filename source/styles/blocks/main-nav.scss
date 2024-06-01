@@ -74,7 +74,7 @@
 }
 
 .main-nav__toggle {
-  background-image: url("../../icons/stack.svg#open-menu");
+  background-image: url("../../icons/stack.svg#open-mobile");
   background-repeat: no-repeat;
   background-color: transparent;
   width: 24px;
@@ -87,21 +87,33 @@
   right: 20px;
   z-index: 2;
   cursor: pointer;
+
+  &--opened {
+    display: none;
+  }
 }
 
 .main-nav__toggle-close {
   background-image: url("../../icons/stack.svg#close-menu");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  border: none;
+  display: block;
+  align-items: center;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  z-index: 2;
+  cursor: pointer;
+
+  &--closed {
+    display: none;
+  }
 }
 
-.main-nav__toggle--close {
-  display: none;
-}
-
-.main-nav__list--hide {
-  display: none;
-}
-
-.main-nav__toggle--hide {
+.main-nav__list--nojs {
   display: none;
 }
 
