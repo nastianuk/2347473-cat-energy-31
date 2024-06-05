@@ -36,6 +36,11 @@
 }
 
 .example__title {
+  font-family: $font-family-oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: $black;
   margin: 0 0 40px;
 
   @media (min-width: $tablet-width) {
@@ -164,6 +169,14 @@
   position: absolute;
   left: 50%;
 
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    background-color: $basic-green-2;
+    opacity: 0.6;
+  }
 
   &::before {
     content: "";
@@ -182,6 +195,15 @@
     }
   }
 
+  &:hover::before {
+    border-color: $basic-green;
+  }
+
+  &:active::before {
+    border-color: $basic-green-2;
+    opacity: 0.6;
+  }
+
   &::after {
     content: "";
     width: 24px;
@@ -195,6 +217,15 @@
     position: absolute;
     top: 120px;
     left: -11px;
+  }
+
+  &:hover::after {
+    background-color: $basic-green;
+  }
+
+  &:active::after {
+    border-color: $basic-green-2;
+    opacity: 0.6;
   }
 
   @media (min-width: $tablet-width) {

@@ -11,6 +11,11 @@
 }
 
 .catalog-cards__title {
+  font-family: $font-family-oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: $black;
   margin: 0 20px 37px;
 
   @media (min-width: $tablet-width) {

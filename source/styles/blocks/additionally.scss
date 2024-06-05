@@ -25,7 +25,7 @@
 
 .additionally__list {
   list-style: none;
-  margin: 33px 20px 35px;
+  margin: 33px 0 35px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -142,6 +142,15 @@
   height: 40px;
   text-align: center;
 
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    background-color: $basic-green-2;
+    color: rgba($white, 0.3);
+  }
+
   @media (min-width: $desktop-width) {
     width: 244px;
   }
@@ -230,7 +239,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 223px;
@@ -255,7 +263,7 @@
 }
 
 .additionally__item {
-  padding: 13px 0 19px;
+  padding: 13px 20px 19px;
   border-top: 1px solid $border-gray;
 
   &:last-of-type {

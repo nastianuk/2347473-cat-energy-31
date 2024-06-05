@@ -157,6 +157,18 @@
     }
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    transform: scale(1.2);
+  }
+
+  &:active::after {
+    transform: scale(1.2);
+  }
+
   @media (max-width: $mobile-width-only) {
     &::before {
       content: "";
