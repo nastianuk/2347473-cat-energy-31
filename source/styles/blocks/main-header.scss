@@ -1,6 +1,5 @@
 .main-header {
   min-height: 39px;
-  margin: 0 auto;
 
   &--catalog {
     @media (max-width: $mobile-width-only) {
@@ -16,6 +15,7 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     padding: 55px 110px 0;
+    margin: 0 auto;
     position: relative;
 
     &::after,
@@ -42,10 +42,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       z-index: -2;
-
-      // @media (min-resolution: 2dppx) {
-      //   background-image: url("../../images/index-background-desktop@2x.jpg")
-      //  }
     }
   }
 }

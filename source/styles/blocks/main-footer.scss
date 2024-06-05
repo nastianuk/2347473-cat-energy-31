@@ -45,6 +45,15 @@
   min-width: 28px;
   min-height: 22px;
   display: block;
+
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    background-color: $basic-green;
+    opacity: 0.3;
+  }
 }
 
 .main-footer__social-link--vkontakte {
@@ -78,6 +87,15 @@
   min-width: 27px;
   min-height: 34px;
   display: block;
+
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    background-color: $basic-green;
+    opacity: 0.3;
+  }
 }
 
 .main-footer__html-text {
@@ -112,5 +130,15 @@
   @media (min-width: $tablet-width) {
     width: 162px;
     margin: 0;
+  }
+}
+
+.main-footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

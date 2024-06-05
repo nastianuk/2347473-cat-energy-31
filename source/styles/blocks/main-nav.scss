@@ -125,7 +125,8 @@
     margin-right: 4px;
   }
 
-  .main-nav__toggle {
+  .main-nav__toggle,
+  .main-nav__toggle-close {
     display: none;
   }
 }
@@ -204,8 +205,8 @@
 }
 
 .main-nav__list--catalog {
-  .main-nav__list-item--active {
-    &::after {
+  @media (min-width: $tablet-width) {
+    .main-nav__list-item--active::after {
       content: "";
       display: inline-block;
       position: absolute;
