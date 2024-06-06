@@ -145,7 +145,7 @@
     height: 10px;
     mask-image: url("../../icons/stack.svg#arrow");
     mask-position: 100%;
-    mask-size: 32px 10px;
+    mask-size: 24px 10px;
     mask-repeat: no-repeat;
     display: block;
     top: 8px;
@@ -162,11 +162,11 @@
   }
 
   &:hover::after {
-    transform: scale(1.2);
+    mask-size: 32px 10px;
   }
 
   &:active::after {
-    transform: scale(1.2);
+    mask-size: 32px 10px;
   }
 
   @media (max-width: $mobile-width-only) {

@@ -46,7 +46,8 @@
   min-height: 22px;
   display: block;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $basic-green;
   }
 
@@ -88,7 +89,8 @@
   min-height: 34px;
   display: block;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $basic-green;
   }
 
