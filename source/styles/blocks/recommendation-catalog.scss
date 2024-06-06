@@ -135,6 +135,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    width: 108px;
   }
 
   &::after {
@@ -152,7 +153,12 @@
     left: 95px;
 
     @media (min-width: $tablet-width) {
-      top: 10px;
+      top: 9px;
+      left: 132px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 3px;
       left: 132px;
     }
   }
@@ -201,6 +207,6 @@
     padding: 77px 77px 59px 52px;
     width: 570px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 }

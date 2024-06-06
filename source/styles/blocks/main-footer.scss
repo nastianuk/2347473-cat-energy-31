@@ -136,7 +136,8 @@
 }
 
 .main-footer__logo {
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
