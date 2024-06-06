@@ -80,3 +80,10 @@
     }
   }
 }
+
+.catalog-cards__item--more {
+  @media (min-width: $tablet-width) {
+    margin-top: 84px;
+    padding: 0 37px 35px;
+  }
+}
