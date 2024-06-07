@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    padding: 0 110px;
+    padding: 0;
     border: none;
   }
 }
@@ -170,5 +170,9 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 708px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
