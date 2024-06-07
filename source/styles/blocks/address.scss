@@ -99,19 +99,19 @@
 
 .address__map {
   height: 362px;
-  background-image: url("../../images/map-mobile@1x.png");
+  background-image: image-set("../../images/map-mobile@1x.png" 1x, "../../images/map-mobile@2x.png" 2x);
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    background-image: url("../../images/map-tablet@1x.png");
+    background-image: image-set("../../images/map-tablet@1x.png" 1x, "../../images/map-tablet@2x.png" 2x);
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     height: 400px;
-    background-image: url("../../images/map-desktop@1x.png");
+    background-image: image-set("../../images/map-desktop@1x.png" 1x, "../../images/map-desktop@2x.png" 2x);
     background-repeat: no-repeat;
     background-size: cover;
   }
