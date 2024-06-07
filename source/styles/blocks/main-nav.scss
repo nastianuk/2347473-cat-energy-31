@@ -139,6 +139,8 @@
 
 .main-nav__list-item--active {
   @media (min-width: $tablet-width) {
+    height: 24px;
+
     &::after {
       content: "";
       display: inline-block;
@@ -152,6 +154,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 30px;
+
     &::after {
       background-color: $white;
       bottom: -12px;

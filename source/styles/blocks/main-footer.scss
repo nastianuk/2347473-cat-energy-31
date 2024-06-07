@@ -27,6 +27,11 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 132px;
+    flex-wrap: wrap;
+  }
 }
 
 .main-footer__social-list-wrapper {
