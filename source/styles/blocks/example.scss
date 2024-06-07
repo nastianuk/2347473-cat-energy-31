@@ -281,10 +281,13 @@
 
 .example__img-slider {
   width: 560px;
-  height: 512px;
   position: absolute;
   inset: 0;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 }
 
 .example__information {
