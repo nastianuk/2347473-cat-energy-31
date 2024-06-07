@@ -19,6 +19,11 @@
   padding: 0;
   margin: 0;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     column-gap: 80px;
