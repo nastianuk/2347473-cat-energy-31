@@ -1,24 +1,22 @@
-.card {
-  &__title--more::before {
-    content: "";
-    background-image: url("../../icons/stack.svg#plus");
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin: 0 auto 23px;
+.card__title--more::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto 23px;
 
-    @media (min-width: $tablet-width) {
-      margin: 0 auto 50px;
-      background-size: 60px 60px;
-      width: 60px;
-      height: 60px;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 50px;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin: 0 55px 45px;
-    }
+  @media (min-width: $desktop-width) {
+    margin: 0 55px 45px;
   }
 }
 
@@ -226,9 +224,7 @@
   }
 }
 
-.catalog-cards__item--more {
-  @media (min-width: $tablet-width) {
-    margin-top: 84px;
-    padding: 0 37px 35px;
-  }
+.card__img-link,
+.card__title-link {
+  text-decoration: none;
 }
