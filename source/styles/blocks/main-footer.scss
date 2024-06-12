@@ -1,5 +1,7 @@
 .main-footer {
-  padding: 40px 20px;
+  @media (max-width: $mobile-width-only) {
+    padding: 40px 20px;
+  }
 }
 
 .main-footer__wrapper {
@@ -41,6 +43,7 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 }
 
