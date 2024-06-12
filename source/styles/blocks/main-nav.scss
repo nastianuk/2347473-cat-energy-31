@@ -119,10 +119,9 @@
 @media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-width: 436px;
-    margin-right: 4px;
+    gap: 30px;
+    width: 478px;
+    flex-wrap: wrap;
   }
 
   .main-nav__toggle,
