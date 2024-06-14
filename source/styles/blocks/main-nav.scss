@@ -119,8 +119,8 @@
 @media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
-    gap: 30px;
-    width: 478px;
+    gap: 33px;
+    width: 440px;
     flex-wrap: wrap;
   }
 
@@ -132,6 +132,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
+    padding-top: 10px;
+    gap: 32px;
     width: 475px;
   }
 }
@@ -157,7 +159,7 @@
 
     &::after {
       background-color: $white;
-      bottom: -12px;
+      bottom: -3px;
     }
   }
 }
