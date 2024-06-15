@@ -222,4 +222,10 @@
       background-color: $basic-green;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .main-nav__list-item--active::after {
+      bottom: -3px;
+    }
+  }
 }

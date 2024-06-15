@@ -3,12 +3,12 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    margin: 0 auto 89px;
+    margin: 0 auto 83px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 0 auto 92px;
+    margin: 0 auto 85px;
   }
 }
 
@@ -23,11 +23,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 65px 30px 84px;
+    margin: 65px 30px 81px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 74px 0 84px;
+    margin: 74px 0 81px;
   }
 }
 
@@ -41,7 +41,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 63px 60px;
+    gap: 62px 60px;
     margin: 0 30px;
   }
 
@@ -61,8 +61,9 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 8px 36px 40px;
-
+    padding: 0 36px 40px;
+    width: 324px;
+    min-height: 430px;
     background-image: linear-gradient($white 81px, $basic-gray 81px);
     border: none;
   }
