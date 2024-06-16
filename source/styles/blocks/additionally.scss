@@ -13,6 +13,13 @@
 }
 
 .additionally__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.additionally__container {
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
